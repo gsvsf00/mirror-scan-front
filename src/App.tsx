@@ -1,11 +1,11 @@
-import React from "react";
+import { LandingPage } from './pages/LandingPage'
+import { Header } from './components/Header'
 
-import './assets/global.css';
-
-import { Home } from "./pages/Home";
-
-export const App = () => {
+export function App() {
   return (
-    <Home />
-  );
-};
+    <div>
+      <Header />
+      <LandingPage />
+    </div>
+  )
+}
